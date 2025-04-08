@@ -1,0 +1,103 @@
+<html>
+<head>
+    <title>Conference Registration Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-lg">
+        <h1 class="text-2xl font-bold mb-6">Conference Registration Form</h1>
+        <form>
+            <div class="mb-4">
+                <label class="block text-gray-700">Full Name:</label>
+                <input type="text" placeholder="Enter your full name" class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Email Address:</label>
+                <input type="email" placeholder="Enter your email address" class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Age:</label>
+                <input type="number" value="18" class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Gender:</label>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="gender" class="form-radio">
+                        <span class="ml-2">Male</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="gender" class="form-radio">
+                        <span class="ml-2">Female</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Country of Residence:</label>
+                <select class="w-full px-3 py-2 border rounded">
+                    <option>Malaysia</option>
+                    <!-- Add other countries as needed -->
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Areas of Interest:</label>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">Software Development</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">Data Science</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">Cybersecurity</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">Artificial Intelligence</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Experience Level:</label>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="experience" class="form-radio">
+                        <span class="ml-2">Beginner</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="experience" class="form-radio">
+                        <span class="ml-2">Intermediate</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="experience" class="form-radio">
+                        <span class="ml-2">Advanced</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Comments or Questions:</label>
+                <textarea placeholder="Any comments or questions?" class="w-full px-3 py-2 border rounded"></textarea>
+            </div>
+            <div class="flex space-x-4">
+                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded">Register</button>
+                <button type="reset" class="px-4 py-2 bg-gray-500 text-white rounded">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
